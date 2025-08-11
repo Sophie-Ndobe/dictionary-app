@@ -9,13 +9,6 @@ export default function Dictionary() {
   let [results, setResults] = useState(null);
 
   function displayDefinition(response) {
-    //console.log(response.data.meanings[0].definition);
-    //console.log(response.data.meanings[0].partOfSpeech);
-    // console.log(response.data.meanings[0].synonyms);
-    //console.log(response.data.phonetic);
-    //console.log(response.data.word);
-    // console.log(response.data);
-
     setResults(response.data);
   }
 

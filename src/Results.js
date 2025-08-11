@@ -2,11 +2,6 @@ import React from "react";
 import Meanings from "./Meanings";
 
 export default function Results(props) {
-  //console.log(props.results);
-  //console.log(props.results.meanings[0].partOfSpeech);
-  //console.log(props.results.meanings[0].synonyms);
-  //console.log(props.results.phonetic);
-
   if (props.results) {
     return (
       <div className="Results">
