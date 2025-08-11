@@ -12,7 +12,33 @@ function App() {
           <Dictionary />
         </main>
         <footer className="App-footer">
-          <small>Coded by Sophie</small>
+          <small>
+            This project was developed by{" "}
+            <a
+              href="https://github.com/Sophie-Ndobe"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>SN Ndobe</strong>
+            </a>
+            , released as{" "}
+            <a
+              href="https://github.com/Sophie-Ndobe/dictionary-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              open source
+            </a>
+            , and is hosted on{" "}
+            <a
+              href="https://dictionary-sophie-react.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Netlify
+            </a>
+            .
+          </small>
         </footer>
       </div>
     </div>
