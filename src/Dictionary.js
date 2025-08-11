@@ -1,12 +1,22 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Results from "./Results";
+
 import "./Dictionary.css";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState(" ");
+  let [results, setResults] = useState(null);
 
   function displayDefinition(response) {
-    console.log(response.data);
+    //console.log(response.data.meanings[0].definition);
+    //console.log(response.data.meanings[0].partOfSpeech);
+    // console.log(response.data.meanings[0].synonyms);
+    //console.log(response.data.phonetic);
+    //console.log(response.data.word);
+    // console.log(response.data);
+
+    setResults(response.data);
   }
 
   function submitForm(event) {
@@ -28,6 +38,7 @@ export default function Dictionary() {
       <form onSubmit={submitForm}>
         <input type="search" onChange={searchDisplay} />
       </form>
+      <Results results={results} />
     </div>
   );
 }
