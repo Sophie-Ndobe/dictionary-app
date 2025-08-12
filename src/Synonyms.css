@@ -1,3 +1,6 @@
 .Synonyms li {
   list-style-type: none;
+  display: inline-block;
+  padding-right: 15px;
+  color: #2f57d0;
 }

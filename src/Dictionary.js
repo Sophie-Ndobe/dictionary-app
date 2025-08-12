@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
-
 import "./Dictionary.css";
 
 export default function Dictionary(props) {
@@ -37,13 +36,20 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="Dictionary">
-        <form onSubmit={submitForm}>
-          <input
-            type="search"
-            onChange={searchDisplay}
-            defaultValue={props.defaultkeyword}
-          />
-        </form>
+        <section>
+          <h1>What word do you want to look up?</h1>
+          <form onSubmit={submitForm}>
+            <input
+              type="search"
+              onChange={searchDisplay}
+              defaultValue={props.defaultkeyword}
+            />
+          </form>
+          <div className="suggested">
+            suggested word: fire, love, joy, travel
+          </div>
+        </section>
+
         <Results results={results} />
       </div>
     );

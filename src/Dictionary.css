@@ -1,5 +1,30 @@
-.Dictionary form {
-  display: block;
-  margin: 30px auto;
-  width: 500px;
+.Dictionary h1 {
+  font-size: 24px;
+  padding-left: 5px;
+}
+
+.Dictionary section {
+  padding: 20px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.Dictionary input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #c7c2c2;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #70757a;
+}
+
+.Dictionary .suggested {
+  margin-top: 10px;
+  opacity: 0.5;
+  font-style: italic;
+  font-size: 14px;
 }

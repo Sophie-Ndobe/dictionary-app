@@ -1,13 +1,24 @@
-.App-header {
-  text-align: center;
-  margin: 30px 0px;
+.App {
+  background-color: #dbdbc3;
+  color: #121212;
+}
+
+.App h4 {
+  font-size: 30px;
 }
 
 .App-footer {
   text-align: center;
   opacity: 0.8;
+  padding: 15px 0;
 }
 
 .App-footer a {
+  font-weight: 700;
+  color: #121212;
+}
+
+.App-footer a:hover {
   color: blue;
+  text-decoration: none;
 }
