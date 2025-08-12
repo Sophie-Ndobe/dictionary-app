@@ -9,7 +9,7 @@ function App() {
           <h4 className="text-center mb-3 pt-3">📖📖English Dictionary📖📖</h4>
         </header>
         <main>
-          <Dictionary defaultkeyword="commodity" />
+          <Dictionary defaultkeyword="wealth" />
         </main>
         <footer className="App-footer">
           <small>
